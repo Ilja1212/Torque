@@ -1,0 +1,118 @@
+// All the articles for the site. Each article is an object with the same fields.
+
+export const categories = ['Reviews', 'DIY', 'Motorsport', 'EV & Tech', 'Culture']
+
+export const articles = [
+  {
+    id: 1,
+    slug: 'mk7-golf-tdi-buyers-guide',
+    title: 'Mk7 Golf 1.6 TDI: Used Buyer’s Guide',
+    category: 'Reviews',
+    author: 'Ilja Jascenkovs',
+    date: '2026-10-02',
+    excerpt: 'Ireland’s favourite used hatchback is cheap to run and easy to find. Here is what to check before you buy one.',
+    body: [
+      'Walk through any Irish car park and you will spot a Mk7 Golf within a minute. The 1.6 TDI sold in huge numbers, so there is lots of choice for first-time buyers.',
+      'Start with the service history. These engines are reliable, but they need regular oil changes with the correct oil.',
+      'On the test drive, get the car up to motorway speed and watch for warning lights. A diesel that only did short trips may have a blocked DPF.',
+    ],
+  },
+  {
+    id: 2,
+    slug: 'change-your-own-oil',
+    title: 'How to Change Your Own Oil',
+    category: 'DIY',
+    author: 'Ilja Jascenkovs',
+    date: '2026-10-09',
+    excerpt: 'A beginner’s guide to the most useful maintenance job you can learn, with no garage needed.',
+    body: [
+      'An oil change is the easiest job to start with. You need a socket set, a drain pan, a new filter and the right oil.',
+      'Never work under a car held up only by a jack. Use ramps or axle stands.',
+      'Drain the old oil, change the filter, refill to the right level and check for leaks. Bring the old oil to a recycling centre.',
+    ],
+  },
+  {
+    id: 3,
+    slug: 'watching-irish-rally',
+    title: 'A Beginner’s Guide to Watching Irish Rally',
+    category: 'Motorsport',
+    author: 'Ilja Jascenkovs',
+    date: '2026-09-21',
+    excerpt: 'Stages, spectator points and safety: everything you need for your first rally day.',
+    body: [
+      'Ireland has a busy rally calendar from spring to autumn, and most events are free or cheap to watch.',
+      'Only stand in the official spectator areas. They are the safest spots and often have the best views.',
+      'Bring waterproofs, food and patience. Stages can run late.',
+    ],
+  },
+  {
+    id: 4,
+    slug: 'used-evs-for-students',
+    title: 'Are Used EVs Worth It for Students?',
+    category: 'EV & Tech',
+    author: 'Ilja Jascenkovs',
+    date: '2026-10-20',
+    excerpt: 'Used electric cars are getting cheaper. We look at range, charging and running costs.',
+    body: [
+      'Older electric cars now cost about the same as petrol hatchbacks, which makes them tempting for students.',
+      'Ask the seller for a battery health report before buying.',
+      'Charging is the hard part if you rent. Check where the public chargers are near your home and college.',
+    ],
+  },
+  {
+    id: 5,
+    slug: 'limerick-car-meet',
+    title: 'Inside Limerick’s Monthly Car Meet',
+    category: 'Culture',
+    author: 'Ilja Jascenkovs',
+    date: '2026-08-30',
+    excerpt: 'From modified Civics to spotless classics, we spent an evening at the local meet.',
+    body: [
+      'Once a month a car park fills up with everything from daily drivers to show cars.',
+      'The rules are simple: no burnouts, no loud revving, and take your rubbish home.',
+      'It is a great place for beginners to ask questions. Most owners love talking about their cars.',
+    ],
+  },
+  {
+    id: 6,
+    slug: 'when-to-replace-brake-pads',
+    title: 'Brake Pads: When to Replace Them',
+    category: 'DIY',
+    author: 'Ilja Jascenkovs',
+    date: '2026-11-01',
+    excerpt: 'Squealing or grinding when you brake? Learn the warning signs and how to check your pads.',
+    body: [
+      'Brakes are the most important safety part of your car and a common NCT fail.',
+      'A squeal usually means the pads are getting low. Grinding means they may be worn out completely.',
+      'You can often see the pad through the wheel. Under about 3 mm means it is time to replace them.',
+    ],
+  },
+  {
+    id: 7,
+    slug: 'first-track-day',
+    title: 'Your First Track Day',
+    category: 'Motorsport',
+    author: 'Ilja Jascenkovs',
+    date: '2026-07-14',
+    excerpt: 'You do not need a race car to drive on a track. Here is how to get ready.',
+    body: [
+      'Track days let you drive your own car on a real circuit, and many have beginner sessions.',
+      'Check your tyres, brakes and oil before you go.',
+      'If you can, book a session with an instructor. You will learn a lot in a few laps.',
+    ],
+  },
+  {
+    id: 8,
+    slug: 'dash-cams-under-100',
+    title: 'Dash Cams Under €100',
+    category: 'EV & Tech',
+    author: 'Ilja Jascenkovs',
+    date: '2026-09-05',
+    excerpt: 'A cheap dash cam can help you after an accident. Here is what to look for.',
+    body: [
+      'You do not need to spend a lot to get a useful dash cam.',
+      'Look for good night-time video, a wide view and loop recording.',
+      'Keep it simple. A camera that records every trip is better than a fancy one you forget to turn on.',
+    ],
+  },
+]
