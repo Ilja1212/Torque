@@ -1,31 +1,33 @@
 <script setup>
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { articles } from '../data/articles.js'
+import { useArticles } from '../stores/articleStore.js'
 
-// Read the slug from the address bar, e.g. /article/change-your-own-oil
 const route = useRoute()
+const { articles } = useArticles()
 
-// Find the article whose slug matches
-const article = articles.find((a) => a.slug === route.params.slug)
+// computed so the lookup runs again if the address or the articles change
+const article = computed(() =>
+  articles.value.find(item => item.slug === route.params.slug)
+)
 </script>
 
 <template>
-  <!-- Show the article if we found one -->
   <div v-if="article" class="article">
     <RouterLink to="/">← Back to all articles</RouterLink>
 
     <p class="category">{{ article.category }}</p>
-    <h1>{{ article.title }}</h1>
+    <h1 tabindex="-1">{{ article.title }}</h1>
     <p class="meta">By {{ article.author }} · {{ article.date }}</p>
 
     <div class="image-placeholder">{{ article.category }}</div>
 
-    <p v-for="paragraph in article.body" :key="paragraph">{{ paragraph }}</p>
+    <p v-for="(paragraph, index) in article.body" :key="index">{{ paragraph }}</p>
   </div>
 
-  <!-- Otherwise show a message -->
   <div v-else>
-    <h1>Article not found</h1>
+    <h1 tabindex="-1">Article not found</h1>
+    <p>This article may have been deleted or the link is wrong.</p>
     <RouterLink to="/">Back to all articles</RouterLink>
   </div>
 </template>
